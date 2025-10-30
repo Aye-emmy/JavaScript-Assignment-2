@@ -1,7 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 10) + 1;
     //console.log(randomNumber);
 
-    let maxCount = 6;
+    let maxCount = 5;
     let attemptCount = 0;
     let button = document.getElementById('button');
 
@@ -12,10 +12,7 @@ function guessNumber(){
     attemptCount =  attemptCount + 1;
     let count = maxCount - attemptCount;
 
-    if(guess==0){
-        console.log('Start Game');
-    }
-    else if(guess===randomNumber && attemptCount < maxCount){
+    if(guess===randomNumber && attemptCount < maxCount){
         alert('YOU WIN. Refresh to Continue');
         document.getElementById('number').disabled = true;
         button.disabled = true;
@@ -32,4 +29,4 @@ function guessNumber(){
         button.disabled = true;
     }
 }
-guessNumber();
+//guessNumber();
