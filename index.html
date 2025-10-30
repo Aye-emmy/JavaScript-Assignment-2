@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Assignment</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+        }
+        h1,p,label{
+            margin: 20px 10px;
+        }
+        input{
+            padding: 5px;
+            margin: 0px 5px;
+        }
+        button{
+            margin: 0px 5px;
+            padding: 5px;
+            background-color: green;
+            color: white;
+            border: 1px solid green;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Guess The Number</h1>
+    <p>We have selected a random number between 1-10. See if you can guess it.</p>
+    <label for="">Enter a guess:</label>
+    <input type="text" id="number">
+    <button onclick="guessNumber()" id="button">Submit guess</button>
+</body>
+
+<script src="/script.js"></script>
+</html>
